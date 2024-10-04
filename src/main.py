@@ -10,9 +10,7 @@ import re
 """
 Парсер торговой площидки Avito, с помощью Selenium
 Для работоспособности не забудьте скачать сам драйвер, под свою версию браузера Chrome.
-По всем возникшим вопросам, можете писать в группу https://vk.com/happython
-Ссылка на статью: None
-Отзывы, предложения, советы приветствуются.
+
 """
 
 
@@ -93,6 +91,6 @@ def save_exel(data):
 
 if __name__ == "__main__":
     #url = input('Введите ссылку на раздел, с заранее выбранными характеристиками (ценовой диапазон и тд):\n')
-    url = 'https://www.avito.ru/bashkortostan?bt=1&f=ASgCAgECAUXGmgwZeyJmcm9tIjoxMTAwMCwidG8iOjEyMDAwfQ&i=1&q=%D0%B2%D0%B5%D0%BB%D0%BE%D1%81%D0%B8%D0%BF%D0%B5%D0%B4&s=104'
+    url = 'https://www.avito.ru/bashkortostan/avtomobili?cd=1&q=%D0%9B%D0%B0%D0%B4+%D0%B3%D1%80%D0%B0%D0%BD%D1%82%D0%B0'
     print('Запуск парсера...')
     print(parser(url))
